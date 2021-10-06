@@ -1,3 +1,3 @@
 # Hacker News
 
-Hosted at: 
+Hosted at: https://github.com/SushantPatial/Hacker-News.git
