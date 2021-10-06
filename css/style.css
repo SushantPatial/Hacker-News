@@ -8,8 +8,8 @@ nav {
   background-color: orange;
 }
 
-main {
-  height: 1000px;
+section {
+  height: auto;
   background-color: rgb(39, 39, 39);
 }
 
