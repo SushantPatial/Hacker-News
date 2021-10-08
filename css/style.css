@@ -4,13 +4,15 @@ body {
 }
 
 nav {
-  height: 80px;
-  background-color: #ED7D3A
+  height: 15vh;
+  width: 100%;
+  background-color: #ED7D3A;
 }
 
 main {
   height: 1200px;
-  background-color: #363527;
+  background-color: WHITE;
+  /* background-color: #363527; */
 }
 
 ::-webkit-scrollbar {
@@ -28,6 +30,6 @@ main {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 81, 0); 
+  background: rgb(255, 81, 0);
   cursor: pointer;
 }
