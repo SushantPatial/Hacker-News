@@ -1,8 +1,17 @@
+:root {
+  --red: #EF2D56;
+  --white: #ffffff;
+  --orange: #ED7D3A;
+  --black: #363527; 
+  --poppins: "Poppins", sans-serif !important;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box !important;
 }
+
 
 #container {
   margin: 0 auto;
@@ -21,9 +30,40 @@ body {
     "void void void more";
 }
 
-#headline {
+#breaking {
+  display: flex;
+  margin: 0.5em 0em;
+  font-family: var(--poppins);
+  justify-content:  space-evenly;
+
+  color: white;
   grid-area: headline;
+  background: var(--red);
+  
 }
+
+/* More "button" and The breaking news "Button" */
+.rectangle-button-one
+{
+  margin: 0.5em;
+  flex-shrink: 4;
+  color: var(--red);
+  background: whitesmoke;
+  border-radius: 3px;
+
+  width: 12%;
+  height: 70%;
+}
+
+.rectangle-button-one p
+{
+  padding: 0.8em;
+  font-size: 1.4ch;
+  text-align: center;
+}
+
+
+#breaking h5{padding: 1em 0em;}
 
 /* CONTENTS*/
 /* Cards */
@@ -31,7 +71,8 @@ body {
 .content {
   overflow: hidden;
   position: relative; /*Experimental*/
-  font-family: "Poppins", sans-serif !important;
+  word-wrap: break-word;
+  font-family: var(--poppins);
 
   margin: 0.5rem;
   transition: 0.5s linear;
@@ -39,9 +80,10 @@ body {
   border-bottom-right-radius: 4px;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
-img {
+
+#container img {
   display: block;
-  border-bottom: 3.2px solid #ef2d56;
+  border-bottom: 3.2px solid var(--red);
 }
 
 .content:hover .hide-button {
@@ -94,8 +136,8 @@ img {
 
 hr::after,
 .time-by {
-  font-size: 1.3ch;
-  font-family: "Poppins", sans-serif !important;
+  font-size: 0.85em;
+  font-family: var(--poppins);
 }
 
 /* Comments and author */
@@ -112,7 +154,7 @@ hr::after,
 }
 .time-by :nth-child(2)::after {
   cursor: pointer;
-  color: #ef2d56;
+  color: var(--red);
   content: "Comments";
 }
 /* Points */
@@ -179,11 +221,38 @@ hr::after {
 /* CONTENTS  */
 
 /* More Button */
-#more {
-  grid-area: more;
+
+.rectangle-button-two
+{
+  position: relative;
+  left: 48%;
+  
+  width: 50%;
+  height: 60%;
+  
+  grid-area: more;  
+  border-radius: 3px;
+  color: var(--orange);
+  background: whitesmoke;
+  border: 2px solid var(--black);
+  
+}
+.rectangle-button-two p
+{
+  font-size: 2.2ch;
+  text-align: center;
+  padding-top: 1px;
 }
 
-@media screen and (max-width: 1204px) {
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
   .time-by {
     position: relative;
     top: 0em;
@@ -200,7 +269,26 @@ hr::after {
     font-size: 0.8em;
   }
 
+  .rectangle-button-one p
+  {
+    padding: 1em 0;
+    font-size: 1.3ch;
+  }
+  
+  #breaking h5
+  {
+    font-size: 1.1em;
+  }
   hr::after,.time-by {font-size: 1.3ch;}
 }
 
-@media screen and (max-width: 1024px) {hr::after,.time-by {font-size: 1.1ch;}}
+@media screen and (max-width: 1024px) 
+{
+  hr::after,.time-by {font-size: 1.1ch;}
+  .rectangle-button-one p
+  {
+    font-size: 1.2ch;
+    margin: 0em 0.5em;
+    padding: 0.5em;
+  }
+}
