@@ -32,7 +32,7 @@ nav {
     "cont1 cont2 cont3 cont4"
     "cont5 cont6 cont7 cont8"
     "cont9 cont10 cont11 cont12"
-    "cont13 cont14 cont15 cont16";
+    "cont13 cont14 cont15 cont16" ;
   }
 
 #breaking {
@@ -260,23 +260,19 @@ hr::after {
 
 
 
-
-
 @media screen and (max-width: 1300px) {
   .time-by {
-    position: relative;
     top: 0em;
+    position: relative;
     justify-content: space-around;
   }
-  .time-by p {
-    margin: 0 1em;
-  }
+  .time-by p {margin: 0 1em;}
 
   hr {
     margin: 1px !important;
   }
   .news-headline {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .rectangle-button-one p
@@ -289,16 +285,29 @@ hr::after {
   {
     font-size: 1.1em;
   }
-  hr::after,.time-by {font-size: 1.3ch;}
+  hr::after,.time-by {font-size: 1.2ch;}
+
+  .hide-button
+  {
+    transform:scale(0.9) ;
+  }
 }
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 1124px) 
 {
-  hr::after,.time-by {font-size: 1.1ch;}
+  .content p{margin: 0;}
+
+  hr::after,.time-by {font-size: 1ch;}
+
   .rectangle-button-one p
   {
     font-size: 1.2ch;
     margin: 0em 0.5em;
     padding: 0.5em;
+  }
+  .hide-button
+  {
+    transform:scale(0.8) ;
+    right: 0;
   }
 }
