@@ -10,7 +10,7 @@ function unhover(element)
 
 $(".hide-button").click(function()
 {
-  $(this).closest(".content").fadeTo(500, 0.01, function() 
+  $(this).closest(".card").fadeTo(500, 0.01, function() 
   { 
     $(this).slideUp(200, function()
     {
