@@ -85,7 +85,7 @@ main {
   border-radius: 1em;
   padding: 0.2em 0.7em;
   border: 1px solid black;
-  background-color: rgba(83, 83, 83, 0.178);
+  background-color: rgba(92, 92, 92, 0.178);
 }
 
 .hide-button:hover {
