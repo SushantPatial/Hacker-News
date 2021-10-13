@@ -168,7 +168,7 @@ hr {
   margin: 0.5em;
 }
 hr::after {
-  content: "69 Points";
+  content: "100 Points";
   text-align: right;
 
   position: absolute;
